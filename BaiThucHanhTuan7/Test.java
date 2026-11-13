@@ -1,5 +1,5 @@
-package BaiThucHanhTuan7;
 
+package BaiThucHanhTuan7;
 
 import java.util.ArrayList;
 
@@ -19,8 +19,16 @@ public class Test {
         danhSachSach.add(sach2);
         danhSachSach.add(sach3);
 
+        // Sử dụng Setter để thay đổi thông tin sách
+        sach1.setSoLuong(12);
+        sach2.setNamXuatBan(1995);
+
+        // Sử dụng Getter để lấy thông tin sách
+        System.out.println("Ma sach dau tien: " + sach1.getMaSach());
+        System.out.println("So luong sach dau tien: " + sach1.getSoLuong());
+
         // Hiển thị danh sách sách
-        System.out.println("===== DANH SACH SACH TRONG THU VIEN =====");
+        System.out.println("\n===== DANH SACH SACH TRONG THU VIEN =====");
 
         for (Sach sach : danhSachSach) {
             sach.hienThiThongTin();
@@ -30,4 +38,3 @@ public class Test {
         System.out.println("Tong so dau sach: " + danhSachSach.size());
     }
 }
-
